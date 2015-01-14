@@ -25,13 +25,14 @@ function foo() {
   return function () {
     //console.log(pre);
     var tmp = prev + curr;
+    var hold_prev = prev;
     prev = curr;
     curr = tmp;
-    return curr;
+    return hold_prev;
   }
 }
 
-//
+//why this line of code???
 var test = foo();
 var sched = later.parse.recur().every(1).hour();
 later.setInterval(function () {
