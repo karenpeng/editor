@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "later": "^1.1.6",
     "node-harmony": "^1.0.0",
-    "regenerator": "^0.8.3"
+    "regenerator": "^0.8.3",
+    "twit": "^1.1.19"
   }
 }
