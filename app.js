@@ -60,8 +60,3 @@ later.setInterval(function () {
 //   }
 // }
 
-later.date.UTC();
-var sched = later.parse.recur().on('03:50:00').time();
-later.setInterval(function () {
-  foo();
-}, sched);
